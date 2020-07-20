@@ -1,5 +1,5 @@
 # Vagrantfile for StratosPhpere
-A suggested Vagrantfile for the StratosPhpere dev environment and a good starting point. Feel free to tweak it as you see fit.
+PHP web development environment
 
 ## If you run into synced folder trouble between Windows 10 host and CentOS 7 guest:
 https://stackoverflow.com/questions/40972345/vagrant-synced-folders-not-working-real-time-on-virtualbox
