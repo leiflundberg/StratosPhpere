@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "leiflundberg/StratosPhpere"
-  config.vm.box_version = "1905.1"
+  config.vm.box_version = "1.0.1"
   config.ssh.insert_key = false
 
   # Disable automatic box update checking. If you disable this, then
