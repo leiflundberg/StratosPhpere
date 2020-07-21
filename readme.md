@@ -1,5 +1,5 @@
 # Web dev environment
-A simple LEMP-stack Vagrant box for web development with PHP. It is based on CentOS 8 and focuses on using recent, official versions of software.
+A simple LEMP-stack Vagrant box for web development with PHP. It is based on CentOS 8 and PHP 7.4.
 
 ## Usage
 ### Installation
