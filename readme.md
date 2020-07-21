@@ -9,16 +9,26 @@ https://www.virtualbox.org/wiki/Downloads
 
 https://www.vagrantup.com/downloads
 
-Once installed you can simply run:
+Once these two are installed you can simply run:
 
-# TODO ADD LINK HERE
+```
+git clone https://github.com/leiflundberg/StratosPhpere.git
+cd StratosPhere
+vagrant up
+```
 
 ### Development
 You may obviously change the Vagrantfile and tweak it to your liking, but if you have kept all of the values default:
 
-IP: 192.168.33.10
+**IP: 192.168.33.10**
+
+**Username: vagrant**
+**Password: vagrnat**
 
 Shared folder is between the current working directory (same as where the Vagrantfile is located) => /vagrant.
+```
+(host) . (vagrant guest) => /vagrant
+```
 
 ## Troubleshooting
 
