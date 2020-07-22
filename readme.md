@@ -40,19 +40,31 @@ Shared folder is between the current working directory (same as where the Vagran
 
 ## Troubleshooting
 
-### Vagrant missing file id_rsa / SSH cannot connect
-Have you remembered to generate an SSH-keypair? The file /home/$USER/.ssh/id_rsa must simply exist.
+### Vagrant missing file id_rsa / SSH cannot connect / retrying...
+#### Don't care about SSH-keypairs? 
+Add the following line to your Vagrantfile:
+
+```
+config.ssh.insert_key = false
+```
+
+#### Care about SSH-keypairs?
+Does the file exist? For Vagrant to accept a keypair the file /home/$USER/.ssh/id_rsa must simply exist.
+
 ```
 cd
 touch .ssh/id_rsa
 ```
-If you want to do this how you are supposed to: 
+
+If you want to generate a SSH-keypair: 
+
 ```
 ssh-keygen -t rsa -C "your_email@example.com"
 
 ```
 
 ### Ubuntu 20.04 WARNING: The character device /dev/vboxdrv does not exist.
+
 ```
 sudo apt-get install linux-headers-generic
 sudo dpkg-reconfigure virtualbox-dkms
@@ -60,12 +72,27 @@ sudo dpkg-reconfigure virtualbox-dkms
 
 ### mount: /vagrant: unknown filesystem type 'vboxsf'.
 Make sure you are not on an older version of Vagrant, some Linux distrobutions have an outdated version in their repositories. You can check installed version:
+
 ```
 vagrant --version 
 ```
 
-### Synced folder trouble with Windows 10 as host OS:
-https://stackoverflow.com/questions/40972345/vagrant-synced-folders-not-working-real-time-on-virtualbox
+Alternatively you might need to install the file extension: 
+
+```
+sudo apt install build-essential dkms linux-headers-$(uname -r)
+```
+
+### Synced folder trouble
+Sometimes synced folders are not working in real time on Virtualbox, in particular under Windows 10 as host OS. You may use rsync to fix this. 
+
+https://www.vagrantup.com/docs/synced-folders/rsync.html
+
+You can also use the NFS file system:
+
+```
+config.vm.synced_folder ".", "/home/ubuntu/qb-online", type: "nfs"
+```
 
 # Customization
 ## For nicer directory colors when using shared folders you can run: 
