@@ -23,7 +23,15 @@ You may obviously change the Vagrantfile and tweak it to your liking, but if you
 **IP: 192.168.33.10**
 
 **Username: vagrant**
+
 **Password: vagrnat**
+
+**nginx root folder: /usr/share/nginx/html**
+
+**nginx config file: /etc/nginx/nginx.conf**
+
+**Forwarded port localhost:42069 => (vagrant) 80**
+
 
 Shared folder is between the current working directory (same as where the Vagrantfile is located) => /vagrant.
 ```
