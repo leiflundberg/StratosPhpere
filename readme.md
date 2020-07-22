@@ -50,6 +50,12 @@ sudo apt-get install linux-headers-generic
 sudo dpkg-reconfigure virtualbox-dkms
 ```
 
+### mount: /vagrant: unknown filesystem type 'vboxsf'.
+Make sure you are not on an older version of Vagrant, some Linux distrobutions have an outdated version in their repositories. You can check installed version:
+```
+vagrant --version 
+```
+
 ### Synced folder trouble with Windows 10 as host OS:
 https://stackoverflow.com/questions/40972345/vagrant-synced-folders-not-working-real-time-on-virtualbox
 
