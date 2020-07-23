@@ -36,8 +36,8 @@ Shared folder is between the current working directory (same as where the Vagran
 (host) . (vagrant guest) => /vagrant
 ```
 
-# Customization
-## For nicer directory colors when using shared folders you can run: 
+## Customization
+### For nicer directory colors when using shared folders you can run: 
 
 ```
 wget https://raw.github.com/trapd00r/LS_COLORS/master/LS_COLORS -O $HOME/.dircolors
