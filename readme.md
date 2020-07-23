@@ -95,6 +95,10 @@ config.vm.synced_folder ".", "/home/ubuntu/qb-online", type: "nfs"
 ```
 
 # Customization
+## Zsh and oh-my-zsh
+
+chsh -s $(which zsh)
+
 ## For nicer directory colors when using shared folders you can run: 
 
 ```
@@ -102,4 +106,5 @@ wget https://raw.github.com/trapd00r/LS_COLORS/master/LS_COLORS -O $HOME/.dircol
 echo 'eval $(dircolors -b $HOME/.dircolors)' >> $HOME/.bashrc
 . $HOME/.bashrc
 ```
+
 
