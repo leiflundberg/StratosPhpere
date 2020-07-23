@@ -14,7 +14,7 @@ Once these two are installed you can simply run:
 ```
 git clone https://github.com/leiflundberg/StratosPhpere.git
 cd StratosPhere
-./vus.sh
+vagrant up && vagrant ssh
 ```
 
 ### Development
