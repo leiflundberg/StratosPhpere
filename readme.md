@@ -33,5 +33,5 @@ You are obviously welcome to change the Vagrantfile and tweak it to your liking,
 
 Shared folder is between the current working directory (same as where the Vagrantfile is located) => /vagrant.
 ```
-(host) . (vagrant guest) => /vagrant
+(host) . => (vagrant guest) /vagrant
 ```
