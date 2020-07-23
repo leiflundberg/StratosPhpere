@@ -20,17 +20,15 @@ cd StratosPhere
 ### Development
 You may obviously change the Vagrantfile and tweak it to your liking, but if you have kept all of the values default:
 
-**IP: 192.168.33.10**
+**localhost:42069 => (vagrant):80**
 
 **Username: vagrant**
 
-**Password: vagrnat**
+**Password: vagrant**
 
 **nginx root folder: /usr/share/nginx/html**
 
 **nginx config file: /etc/nginx/nginx.conf**
-
-**Forwarded port localhost:42069 => (vagrant) 80**
 
 
 Shared folder is between the current working directory (same as where the Vagrantfile is located) => /vagrant.
