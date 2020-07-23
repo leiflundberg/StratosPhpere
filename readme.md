@@ -1,5 +1,5 @@
 # Web dev environment
-A dead-simple LEMP-stack Vagrant box for web development with Symfony. It is based on Red Hat CentOS 8.1, Nginx 1.14.1, MySQL Ver 15.1 Distrib 10.3.17-MariaDB and PHP 7.4.8. Other included software: wget, git, nano, the Symfony CLI alongside all suggested PHP extensions and Composer.
+A dead-simple LEMP-stack Vagrant box for web development with Symfony. It is based on Red Hat CentOS 8.1, Nginx 1.14.1, MySQL 10.3.17-MariaDB and PHP 7.4.8. Other included software: wget, git, nano, the Symfony CLI alongside all suggested PHP extensions and Composer.
 
 ## Usage
 ### Installation
